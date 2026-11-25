@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="et">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Risttabelid · Elust, usust ja usuelust</title>
+<meta name="description" content="Koosta UI2026 küsimuste risttabeleid peamiste taustatunnuste lõikes.">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<a class="skip" href="#sisu">Liigu sisu juurde</a>
+<header class="site-head"><div class="wrap"><a class="brand" href="index.html">Elust, usust ja usuelust <small>1995–2026</small></a><nav class="site-nav" aria-label="Peamenüü"><span class="nav-group now"><span class="nav-tag">UI2026</span><a href="tulemused.html">Tulemused</a><a href="kusimustik.html">Küsimustik</a></span><a href="risttabelid.html" aria-current="page">Risttabelid</a><span class="nav-group past"><a href="arhiiv.html">Arhiiv 1995–2020</a><a href="uuringust.html">Uuringust</a><a href="publikatsioonid.html">Publikatsioonid</a></span></nav></div></header>
+
+<main id="sisu" class="page"><div class="wrap">
+  <div class="eyebrow">UI2026 · Risttabelid</div>
+  <h2>Risttabelid taustatunnuste lõikes</h2>
+  <p class="lead" style="margin-bottom:34px">Vali vasakult uuringu aasta, küsimus ja taustatunnus. Andmed on olemas aastatest 1995, 2000, 2005, 2015, 2020 ja 2026. Tabel näitab kaalutud osakaale veergude kaupa; graafikul on valitud vastusevariant rühmade lõikes.</p>
+  <div class="tool">
+    <aside class="panel" aria-label="Valikud">
+      <div class="field"><label>Küsitlusvoor</label><div id="years"></div><p class="muted" id="year-note" style="font-size:.8rem;margin:4px 0 0"></p></div>
+      <div class="field"><label for="q-search">Otsi küsimust</label><input id="q-search" type="search" placeholder="nt usaldus, Jumal, palve…" autocomplete="off"></div>
+      <div class="field"><label id="q-label">Küsimus</label><div class="qlist" id="qlist" role="listbox" aria-labelledby="q-label"></div></div>
+      <div class="field" id="item-field" hidden><label for="item">Väide / alaküsimus</label><select id="item"></select></div>
+      <div class="field"><label>Taustatunnus</label><div class="chips" id="banners"></div></div>
+      <label class="check"><input type="checkbox" id="excl" checked> Jäta välja „Vastus puudub“ (filtriga küsimustel arvuta osakaal vastanutest)</label>
+      <label class="check"><input type="checkbox" id="showsig" checked> Näita statistiliselt olulisi erinevusi</label>
+    </aside>
+    <section class="result" id="result" aria-live="polite"></section>
+  </div>
+</div></main>
+<footer class="site-foot"><div class="wrap"><span>Küsitlussari „Elust, usust ja usuelust“ 1995–2026, algataja dr Hans Hansen · UI2026 tellija: Siseministeerium · teostaja: Eesti Uuringukeskus OÜ</span><span>Tulemused on kaalutud ja ümardatud.</span></div></footer>
+<script src="assets/charts.js"></script>
+<script src="data/kusimustik.js"></script>
+<script src="data/tabelid.js"></script>
+<script src="assets/risttabelid.js"></script>
+</body></html>
